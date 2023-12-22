@@ -51,24 +51,36 @@
 			"command": "electron-vite build",
 			"dependencies": [
 				"typecheck"
+			],
+			"output": [
+				"out/**"
 			]
 		},
 		"build:linux": {
 			"command": "electron-builder --linux --config",
 			"dependencies": [
 				"build"
+			],
+			"output": [
+				"dist/**"
 			]
 		},
 		"build:mac": {
 			"command": "electron-builder --mac --config",
 			"dependencies": [
 				"build"
+			],
+			"output": [
+				"dist/**"
 			]
 		},
 		"build:win": {
 			"command": "electron-builder --win --config",
 			"dependencies": [
 				"build"
+			],
+			"output": [
+				"dist/**"
 			]
 		},
 		"check": {
