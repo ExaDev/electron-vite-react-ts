@@ -27,7 +27,7 @@
 	},
 	"homepage": "https://www.electronjs.org",
 	"main": "./out/main/index.js",
-	"name": "react-ts",
+	"name": "electron-vite-react",
 	"scripts": {
 		"build": "npm run typecheck && electron-vite build",
 		"build:linux": "electron-vite build && electron-builder --linux --config",
