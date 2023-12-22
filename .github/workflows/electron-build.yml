@@ -3,6 +3,9 @@ on:
   push:
   workflow_dispatch:
 
+env:
+  WIREIT_LOGGER: metrics
+
 jobs:
   build:
     strategy:
