@@ -32,7 +32,9 @@
 		"build:linux": "wireit",
 		"build:mac": "wireit",
 		"build:win": "wireit",
+		"check": "wireit",
 		"dev": "electron-vite dev",
+		"fix": "wireit",
 		"format:check": "prettier --write .",
 		"format:fix": "prettier .",
 		"lint:check": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
@@ -68,6 +70,12 @@
 			"dependencies": [
 				"build"
 			]
+		},
+		"check": {
+			"command": "npm run typecheck && npm run lint:check && npm run format:check"
+		},
+		"fix": {
+			"command": "npm run typecheck && npm run lint:fix && npm run format:fix"
 		},
 		"typecheck": {
 			"dependencies": [
