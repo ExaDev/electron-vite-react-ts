@@ -35,10 +35,10 @@
 		"check": "wireit",
 		"dev": "electron-vite dev",
 		"fix": "wireit",
-		"format:check": "prettier --write .",
-		"format:fix": "prettier .",
-		"lint:check": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-		"lint:fix": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts",
+		"format:check": "wireit",
+		"format:fix": "wireit",
+		"lint:check": "wireit",
+		"lint:fix": "wireit",
 		"postinstall": "electron-builder install-app-deps",
 		"start": "electron-vite preview",
 		"typecheck": "wireit",
@@ -72,10 +72,29 @@
 			]
 		},
 		"check": {
-			"command": "npm run typecheck && npm run lint:check && npm run format:check"
+			"dependencies": [
+				"typecheck",
+				"lint:check",
+				"format:check"
+			]
 		},
 		"fix": {
-			"command": "npm run typecheck && npm run lint:fix && npm run format:fix"
+			"dependencies": [
+				"lint:fix",
+				"format:fix"
+			]
+		},
+		"format:check": {
+			"command": "prettier --write"
+		},
+		"format:fix": {
+			"command": "prettier --write ."
+		},
+		"lint:check": {
+			"command": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts"
+		},
+		"lint:fix": {
+			"command": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
 		},
 		"typecheck": {
 			"dependencies": [
