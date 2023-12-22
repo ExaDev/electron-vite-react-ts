@@ -1,4 +1,7 @@
 {
+	"config": {
+		"WIREIT_LOGGER": "metrics"
+	},
 	"dependencies": {
 		"@electron-toolkit/preload": "^3.0.0",
 		"@electron-toolkit/utils": "^3.0.0",
