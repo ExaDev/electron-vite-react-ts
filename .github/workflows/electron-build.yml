@@ -30,3 +30,7 @@ jobs:
     - if : ${{ matrix.os == 'windows-latest' }}
       run: yarn build:win
 
+    - uses: actions/upload-artifact@master
+      with:
+        name: ${{ github.sha }}_${{ matrix.os }}
+        path: dist
