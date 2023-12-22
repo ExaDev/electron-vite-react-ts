@@ -6,6 +6,10 @@ Created using [electron-vite](https://github.com/alex8088/electron-vite) and the
 
 `Package.json` scripts enhanced by [Wireit](https://github.com/google/wireit).
 
+## Preview
+
+![](./screenshot.png)
+
 ## Project Setup
 
 ### Install
@@ -32,7 +36,3 @@ $ npm run build:mac
 # For Linux
 $ npm run build:linux
 ```
-
-## Preview
-
-![](./screenshot.png)
