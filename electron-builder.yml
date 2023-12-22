@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: react-ts
+productName: electron-vite-react-ts
 directories:
   buildResources: build
 files:
@@ -12,7 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: react-ts
+  executableName: electron-vite-react-ts
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}

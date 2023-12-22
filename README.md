@@ -1,4 +1,4 @@
-# react-ts
+# electron-vite-react-ts
 
 An Electron application with React and TypeScript
 
