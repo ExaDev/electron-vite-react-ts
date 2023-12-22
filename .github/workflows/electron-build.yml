@@ -1,6 +1,19 @@
 name: CI
 on:
   push:
+    paths:
+      - ".github/workflows/*"
+      - "build/**"
+      - "dev-app-update.yml"
+      - "electron-builder.yml"
+      - "electron.vite.config.ts"
+      - "package.json"
+      - "resources/**"
+      - "src/**"
+      - "tsconfig.build.json"
+      - "tsconfig.json"
+      - "tsconfig.web.json"
+      - "yarn.lock"
   workflow_dispatch:
 
 env:
