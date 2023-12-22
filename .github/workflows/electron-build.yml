@@ -14,23 +14,23 @@ jobs:
           - windows-latest
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@master
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
 
-    - run: yarn install
+      - run: yarn install
 
-    - run: yarn build
+      - run: yarn build
 
-    - if : ${{ matrix.os == 'macOS-latest' }}
-      run: yarn build:mac
+      - if: ${{ matrix.os == 'macOS-latest' }}
+        run: yarn build:mac
 
-    - if : ${{ matrix.os == 'ubuntu-latest' }}
-      run: yarn build:linux
+      - if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: yarn build:linux
 
-    - if : ${{ matrix.os == 'windows-latest' }}
-      run: yarn build:win
+      - if: ${{ matrix.os == 'windows-latest' }}
+        run: yarn build:win
 
-    - uses: actions/upload-artifact@master
-      with:
-        name: ${{ github.sha }}_${{ matrix.os }}
-        path: dist
+      - uses: actions/upload-artifact@master
+        with:
+          name: ${{ github.sha }}_${{ matrix.os }}
+          path: dist
