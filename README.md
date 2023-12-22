@@ -1,10 +1,10 @@
 # electron-vite-react-ts
 
-An Electron application with React and TypeScript
+An Electron application with React and TypeScript, built with Vite.
 
-## Recommended IDE Setup
+Built using [electron-vite](https://github.com/alex8088/electron-vite) and the [react-ts](https://github.com/alex8088/quick-start/tree/master/packages/create-electron/playground/react-ts) template.
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+`Package.json` scripts by [Wireit](https://github.com/google/wireit).
 
 ## Project Setup
 
