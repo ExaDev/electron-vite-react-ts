@@ -1,5 +1,7 @@
 # electron-vite-react-ts
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ExaDev/electron-vite-react-ts) [![CI](https://img.shields.io/github/actions/workflow/status/ExaDev/electron-vite-react-ts/electron-build.yml?branch=main)](https://github.com/ExaDev/electron-vite-react-ts/actions)
+
 An [Electron](https://github.com/electron/electron) application with [React](https://github.com/facebook/react) and [TypeScript](https://github.com/microsoft/TypeScript), built with [Vite](https://github.com/vitejs/vite).
 
 Created using [electron-vite](https://github.com/alex8088/electron-vite) and the [react-ts](https://github.com/alex8088/quick-start/tree/master/packages/create-electron/playground/react-ts) template.
